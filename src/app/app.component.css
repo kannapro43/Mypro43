@@ -1,0 +1,15 @@
+.dvhi{
+    background-color: red; color: white; text-align: center; height: 200px; width: 200px; line-height: 200px; border: 1px strong black;
+}
+.dvhello{
+    background-color: green; color: white; text-align: center; height: 200px; width: 200px; line-height: 200px; border: 1px strong black;
+}
+.dvnamasthe{
+    background-color: blue; color: white; text-align: center; height: 200px; width: 200px; line-height: 200px; border: 1px strong black;
+}
+.center-radio {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* height: 150px;  */
+  }

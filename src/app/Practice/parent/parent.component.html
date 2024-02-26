@@ -1,0 +1,40 @@
+
+<h1>I am the Parent Component</h1>
+<!-- <h1>this is from child ( {{parent1}} )</h1> -->
+
+    <!-- {{zz}} <br><br> -->
+<!-- <input type="text" [(ngModel)]="parent2" (input)="parentShow1();"/> -->
+
+<!-- <app-child [childVar]="parentVar" (serviceParent)="parentShow($event)"></app-child> -->
+
+
+<!-- <div>
+<input type="text" pInputText [(ngModel)]="stu2"   />
+<button pRipple label="AddText" (click)="addTochild();" class="p-button-success">Add Value to Child</button> -->
+<!-- <app-child [names]="parentName" (servicePerson)="addMsg($event)" ></app-child> -->
+
+
+
+<div class="card" *ngIf="prodata.length>0" style="max-height: 50px !important;">
+    <p-table [value]="prodata" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Discription</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.dis }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+      
+</div>
+
+<div class="mr-8">
+<app-product (productService)="getProduct($event)"></app-product>
+</div>

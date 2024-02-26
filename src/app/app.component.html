@@ -1,0 +1,75 @@
+
+<h1> Hi...I am the Root Component</h1>
+
+<!-- <div class="card flex justify-content-center">
+    <p-dropdown [options]="cities" [(ngModel)]="selectedCity" (onChange)= "showAlert();" optionLabel="name" [showClear]="true" placeholder="Select a Name"></p-dropdown>
+</div> -->
+
+<!-- <div class="grid">
+    <div class="col-3 mb-5">
+    <p-dropdown [options]="states" [(ngModel)]="selectedState" (onChange)= "showStates();" optionLabel="name" [showClear]="true" placeholder="Select a State"></p-dropdown>
+    </div>
+    <div class="col-3">
+        <p-dropdown [options]="showCities" [(ngModel)]="selectedCity" optionLabel="name" [showClear]="true" placeholder="Cities"></p-dropdown>
+    </div>
+</div> -->
+
+
+<!-- <app-parent1></app-parent1> -->
+
+<!-- <app-parent></app-parent> -->
+
+<!-- <app-p1></app-p1> -->
+<!-- <app-c1 [selectedState]="selectedState.name" [selectedCity]="selectedCity.name"></app-c1> -->
+
+
+
+
+<!-- <p-button (click)="inc();" class="p-button-success">Increment</p-button>
+<p-button  (click)="dec();" class="p-button-success">Decrement</p-button>
+
+<app-counter #childView></app-counter>
+<h1>{{child?.counter}}</h1> -->
+
+<!-- <ul>
+    <li *ngFor="let user of users">
+        {{user.id}}
+
+    </li>
+</ul> -->
+
+<!-- <div class="card" *ngIf="users.length>0" style="max-height: 50px !important;">
+    <p-table [value]="users" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-user>
+          <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+
+          </tr>
+        </ng-template>
+      </p-table> 
+      
+</div> -->
+
+<form #usersForm = "ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+  <input type="text" ngModel name="name" placeholder="Enter Name">
+  <br><br>
+  <input type="text" ngModel name="username" placeholder="Enter UserName">
+  <br><br>
+  <input type="text" ngModel name="email" placeholder="Enter Email">
+  <br><br>
+  <button>Add New User</button>
+
+</form>
+
+<router-outlet></router-outlet>

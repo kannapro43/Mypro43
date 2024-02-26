@@ -1,0 +1,25 @@
+<p>product works!</p>
+
+<div class="p-grid">
+
+    <div class="p-col-3 mb-2" >
+        <label for="PID" class="mr-2">ID:</label>
+        <input pInputText id="PID" [(ngModel)]="Id" />
+  
+    </div>
+
+    <div class="p-col-3 mb-2">
+        <label for="PName" class="mr-2">Name:</label>
+        <input pInputText id="PName" [(ngModel)]="Name" />
+  
+    </div>
+    <div class="p-col-3 mb-2">
+         <label for="PDes" class="mr-2">Discription:</label>
+        <input pInputText id="PDes" [(ngModel)]="Discription" />
+  
+    </div>
+    <div class="p-col-3 mb-2">
+    <p-button label="Submit" icon="pi pi-check" (click)="addProducts();"></p-button>
+    </div>
+
+</div>

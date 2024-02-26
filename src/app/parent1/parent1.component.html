@@ -1,0 +1,12 @@
+
+<h1>this is from child ( {{parent_x}} )</h1>
+
+<div style="background-color: blueviolet; height: 100px; width:300px;">
+    <p>parent1 works!</p>
+<input type="text" [(ngModel)]="parent_y" (input)="parentOnChange();"/>
+</div>
+
+<app-child1  [childVariable]="parentVariable" (sperson)="parentMethod($event)" ></app-child1>
+
+
+

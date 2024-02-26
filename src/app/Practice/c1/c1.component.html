@@ -1,0 +1,24 @@
+<!-- <p>c1 works!</p>
+<div class="card" *ngIf="prodata.length>0" style="max-height: 50px !important;">
+    <p-table [value]="prodata" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Discription</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.dis }}</td>
+          </tr>
+        </ng-template>
+      </p-table> 
+      
+</div> -->
+
+<p style="color: blue; border: 1px solid black; height: 20px; width: 150px;" *ngIf="selectedState !=''">State: {{selectedState}}</p>
+<p style="color: brown; border: 1px solid black; height: 20px; width: 150px;" *ngIf="selectedCity !=''">City: {{selectedCity}}</p>
+
