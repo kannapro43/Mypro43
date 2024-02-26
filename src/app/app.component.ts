@@ -37,7 +37,7 @@ usersForm: any;
 
 
 
-  // @ViewChild('childView') child!: CounterComponent;
+  @ViewChild('childView') child!: CounterComponent;
   
   // states: drpdownOptions[] =[];
   // selectedState: drpdownOptions = { name: '', code: '' };
@@ -77,12 +77,12 @@ usersForm: any;
   //   this.showCities = this.cities.filter(city => city.code === this.selectedState.code);
   // }
 
-  // inc(){
-  //   this.child.increment();
-  // }
+  inc(){
+    this.child.increment();
+  }
 
-  // dec(){
-  //   this.child.decrement();
-  // }
+  dec(){
+    this.child.decrement();
+  }
 
 }
