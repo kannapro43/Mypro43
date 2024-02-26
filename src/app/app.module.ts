@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Child1Component } from './child1/child1.component';
@@ -16,8 +17,6 @@ import { C1Component } from './Practice/c1/c1.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CounterComponent } from './Practice/counter/counter.component';
-import {HttpClientModule} from '@angular/common/http';
-
 
 @NgModule({
   declarations: [
@@ -34,6 +33,7 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     InputTextModule,
     FormsModule,
@@ -41,8 +41,6 @@ import {HttpClientModule} from '@angular/common/http';
     TableModule,
     DropdownModule,
     BrowserAnimationsModule,
-    HttpClientModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
